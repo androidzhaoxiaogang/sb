@@ -13,6 +13,8 @@ public class PageController implements EnvironmentAware {
 
 	@Override
 	public void setEnvironment(Environment environment) {
+		// request.getSession().setAttribute("sessionTest", "sessionTestValue");
+		// request.getServletContext().getAttribute("testApplication");
 		String s = environment.getProperty("JAVA_HOME");
 		System.out.println(s);
 	}
